@@ -1,91 +1,59 @@
 import React from "react";
-import movieimg from "../assets/movie.PNG";
-import covidimg from "../assets/covid.JPG";
-import spaceimg from "../assets/space.JPG";
-import intropage from "../assets/intropage.JPG";
+import movieimg from "../assets/movie.jpg";
+import covidimg from "../assets/covid.jpg";
+import spaceimg from "../assets/space.jpg";
+import intropage from "../assets/intropage.jpg";
 
 const Project = () => {
   return (
-    <div name="Project" className="bg-[#0a192f] w-full md:h-full text-gray-300">
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
-            Projects
-          </p>
-          <p className="py-6">Click on the projects to view</p>
-        </div>
-        <div className="md:flex justify-between sm:grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <div className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
-            <div>
-              <div className="text-center px-10 mb-10">
-                <img src={intropage} alt="" className="rounded" />
+    <div name="Project" className="className='w-full h-full bg-[#0a192f] text-gray-300 md:px-40 pt-10" >
+      <h5 className="text-4xl font-bold inline pl-3"> Project</h5>
 
-                <p>
-                Intro section with dropdown navigation built using ReactJS
-                </p>
-                <a
-                  href={"https://temi-dropnavigation-page.netlify.app"}
-                  className="bg-black px-4"
-                >
-                  Go To Site
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
-            <div>
-              <div className="text-center px-10 mt-10">
-                <img src={covidimg} alt="" className=" rounded" />
-
-                <p className=" pb-4">
-                  A site for viewing covid-19 live stats for each of the
-                  countries affected by the virus. Built using ReactJS and Covid
-                  API
-                </p>
-                <a
-                  href={"https://temi-covidtracker-app.netlify.app"}
-                  className="bg-black px-4"
-                >
-                  Go To Site
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
-            <div>
-              <div className="text-center px-10 mt-10">
-                <img src={spaceimg} alt="" className="bg-black rounded" />
-
-                <p className=" pb-4">
-                  Space tourism multi-page website .Built using ReactJS
-                </p>
-                <a
-                  href={"https://temi-space-tourist-app.netlify.app"}
-                  className="bg-black px-4"
-                >
-                  Go To Site
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
-            <div>
-              <div className="text-center px-10 mt-10">
-                <img src={movieimg} alt="" className=" bg-white rounded" />
-
-                <p className=" pb-4">
-                A streaming app used for watching movie trailers or videos uploaded on youtube. Built using Reactjs and TMDB
-                </p>
-                <a
-                  href={"https://temi-movie-app.netlify.app"}
-                  className="bg-black px-4"
-                >
-                  Go To Site
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="portfolio_container grid lg:grid-cols-3 md:grid-cols-2 md:gap-5 gap-10 px-6 py-20">
+        <article className="portfolio_item p-8 bg-[#040c16] border-[#8892b0] rounded-3xl border-2">
+         <div className="portfolio_item-image overflow-hidden rounded-3xl">
+           <img src={movieimg} alt='movie'/>
+         </div>
+         <h3 className="mt-5 mb-8 ml-0">Movie App</h3>
+         <div className="flex gap-2 lg:gap-4 mb-4 ">
+         <a href="https://github.com/Thegirltemi/movieApp" className=" border-2 
+           hover:bg-pink-600 hover:border-pink-600 p-2">Github</a>
+         <a href="https://temi-movie-app.netlify.app" className="border-2 p-2 hover:bg-pink-600 hover:border-pink-600">Live Demo</a>
+         </div>
+        </article>
+        <article className=" p-8 bg-[#040c16] border-[#8892b0] rounded-3xl border-2">
+         <div className=" overflow-hidden rounded-3xl">
+           <img src={intropage} alt='/'/>
+         </div>
+         <h3 className="mt-5 mb-8 ml-0">Into-page with dropdown Nav</h3>
+         <div className="flex gap-2 lg:gap-4   mb-4 ">
+         <a href="https://github.com/Thegirltemi/Intro-dropdown_Nav" className=" border-2 p-2 
+           hover:bg-pink-600 hover:border-pink-600">Github</a>
+         <a href="https://temi-dropnavigation-page.netlify.app" className="border-2 p-2  hover:bg-pink-600 hover:border-pink-600">Live Demo</a>
+         </div>
+        </article>
+        <article className=" p-8 bg-[#040c16] border-[#8892b0] rounded-3xl border-2">
+         <div className=" overflow-hidden rounded-3xl">
+           <img src={covidimg} alt='/' className="w-[300px] h-[170px]"/>
+         </div>
+         <h3 className="mt-5 mb-8 ml-0">Covid live stat App</h3>
+         <div className="flex gap-2 lg:gap-4 mb-4">
+         <a href="https://github.com/Thegirltemi/covid19_TrackerApp" className=" border-2 p-2
+           hover:bg-pink-600 hover:border-pink-600">Github</a>
+         <a href="https://temi-covidtracker-app.netlify.app" className="border-2 p-2  hover:bg-pink-600 hover:border-pink-600">Live Demo</a>
+         </div>
+        </article>
+        <article className="p-8 bg-[#040c16] border-[#8892b0] rounded-3xl border-2">
+         <div className=" overflow-hidden rounded-3xl">
+           <img src={spaceimg} alt='/' />
+         </div>
+         <h3 className="mt-5 mb-8 ml-0">Space tourism multi-page website</h3>
+         <div className="flex gap-2 lg:gap-4 mb-4 ">
+         <a href="https://github.com/Thegirltemi/space_tourism_website" className=" border-2 p-2
+           hover:bg-pink-600 hover:border-pink-600">Github</a>
+         <a href="https://temi-space-tourist-app.netlify.app" className="border-2 p-2 hover:bg-pink-600 hover:border-pink-600">Live Demo</a>
+         </div>
+        </article>
       </div>
     </div>
   );

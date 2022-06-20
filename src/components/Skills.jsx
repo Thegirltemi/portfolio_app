@@ -7,14 +7,14 @@ import tailwindlogo from "../assets/tailwind.PNG";
 
 const Skills = () => {
   return (
-    <div name="Skills" className=" w-full h-screen bg-[#0a192f] text-gray-300">
+    <div name="Skills" className="w-full h-full bg-[#0a192f] text-gray-300 ">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
-          <p className="text-4xl font-bold inline border-b-4 border-pink-600 ">
+          <p className="text-4xl font-bold inline border-b-4 pt-4">
             Skills
           </p>
         </div>
-        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
+        <div className="w-full grid lg:grid-cols-3 md:grid-cols-2 gap-5 text-center py-12 px-8">
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img
               src={htmllogo}

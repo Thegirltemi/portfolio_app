@@ -1,6 +1,6 @@
 import React from "react";
 import movieimg from "../assets/movie.jpg";
-import covidimg from "../assets/covid.jpg";
+import CV19img from "../assets/C19.jpg";
 import spaceimg from "../assets/space.jpg";
 import intropage from "../assets/intropage.jpg";
 
@@ -62,7 +62,7 @@ const Project = () => {
         </article>
         <article className=" p-8 bg-[#040c16] border-[#8892b0] rounded-3xl border-2">
           <div className=" overflow-hidden rounded-3xl">
-            <img src={covidimg} alt="/" className="w-[300px] h-[170px]" />
+            <img src={CV19img} alt="/" className="w-[300px] h-[170px]" />
           </div>
           <h3 className="mt-5 mb-8 ml-0 text-center">Covid live stat App</h3>
           <div className="flex gap-2 lg:gap-4 mb-4 justify-center">

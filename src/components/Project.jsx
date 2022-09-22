@@ -1,8 +1,8 @@
 import React from "react";
 import movieimg from "../assets/movie.jpg";
-import CV19img from "../assets/C19.jpg";
+import shoppingimg from "../assets/backgroundimgshoopingapp.jpg";
 import spaceimg from "../assets/space.jpg";
-import intropage from "../assets/intropage.jpg";
+import weatherimg from "../assets/weather.jpg";
 
 const Project = () => {
   return (
@@ -20,7 +20,8 @@ const Project = () => {
           <div className="portfolio_item-image overflow-hidden rounded-3xl">
             <img src={movieimg} alt="movie" />
           </div>
-          <h3 className="mt-5 mb-8 ml-0 text-center">Movie App</h3>
+          <h3 className="mt-5 mb-8 ml-0 text-center">A streaming app used for watching movie trailers or videos
+          uploaded on youtube.Built using Reactjs.</h3>
           <div className="flex gap-2 lg:gap-4 mb-4 justify-center">
             <a
               href="https://github.com/Thegirltemi/movieApp"
@@ -30,7 +31,7 @@ const Project = () => {
               Github
             </a>
             <a
-              href="https://temi-movie-app.netlify.app"
+              href="https://movie-streaming-app.netlify.app/"
               className="border-2 p-2 hover:bg-pink-600 hover:border-pink-600"
             >
               Live Demo
@@ -39,21 +40,21 @@ const Project = () => {
         </article>
         <article className=" p-8 bg-[#040c16] border-[#8892b0] rounded-3xl border-2">
           <div className=" overflow-hidden rounded-3xl">
-            <img src={intropage} alt="/" />
+            <img src={weatherimg} alt="/" />
           </div>
           <h3 className="mt-5 mb-8 ml-0 text-center">
-            Into-page with dropdown Nav
+            A site for checking the weather information of any location in the world.Built using Reactjs and open weather API
           </h3>
           <div className="flex gap-2 lg:gap-4   mb-4 justify-center">
             <a
-              href="https://github.com/Thegirltemi/Intro-dropdown_Nav"
+              href="https://github.com/Thegirltemi/weather-App"
               className=" border-2 p-2 
            hover:bg-pink-600 hover:border-pink-600"
             >
               Github
             </a>
             <a
-              href="https://temi-dropnavigation-page.netlify.app"
+              href="https://weatherapp-70070.web.app/"
               className="border-2 p-2  hover:bg-pink-600 hover:border-pink-600"
             >
               Live Demo
@@ -62,19 +63,19 @@ const Project = () => {
         </article>
         <article className=" p-8 bg-[#040c16] border-[#8892b0] rounded-3xl border-2">
           <div className=" overflow-hidden rounded-3xl">
-            <img src={CV19img} alt="/" className="w-[300px] h-[170px]" />
+            <img src={shoppingimg} alt="/" className="w-[300px] h-[170px]" />
           </div>
-          <h3 className="mt-5 mb-8 ml-0 text-center">Covid live stat App</h3>
+          <h3 className="mt-5 mb-8 ml-0 text-center">An ecommerce-app for online-shopping.Built using Reactjs and firebase</h3>
           <div className="flex gap-2 lg:gap-4 mb-4 justify-center">
             <a
-              href="https://github.com/Thegirltemi/covid19_TrackerApp"
+              href="https://github.com/Thegirltemi/Ecommerce-app"
               className=" border-2 p-2
            hover:bg-pink-600 hover:border-pink-600"
             >
               Github
             </a>
             <a
-              href="https://temi-covidtracker-app.netlify.app"
+              href="https://e-commerce-app-ad4ed.web.app/"
               className="border-2 p-2  hover:bg-pink-600 hover:border-pink-600"
             >
               Live Demo
